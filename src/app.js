@@ -8,6 +8,7 @@ const feesRoutes = require('./routes/fees');
 const incomeRoutes = require('./routes/income');
 const transactionsRoutes = require('./routes/transactions');
 const superAdminRoutes = require('./routes/superAdmin');
+const subscriptionRoutes = require('./routes/subscription');
 
 const app = express();
 
@@ -31,5 +32,6 @@ app.use('/api/fees', feesRoutes);
 app.use('/api/income', incomeRoutes);
 app.use('/api/transactions', transactionsRoutes);
 app.use('/api/super-admin', superAdminRoutes);
+app.use('/api/subscription', subscriptionRoutes);
 
 module.exports = app;
